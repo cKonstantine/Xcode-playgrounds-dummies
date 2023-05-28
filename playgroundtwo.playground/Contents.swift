@@ -32,3 +32,5 @@ autoturism.producator = "Ford"
 autoturism.pret = 19500
 
 print (autoturism.comparator())
+
+//Adding random comment
