@@ -8,7 +8,9 @@ class Masina {
     var anFabricatie: Int = 0
     var pret: Int = 0
     var caroserie: String = ""
+    var numarSerie: Int = 0
     
+    //Function with basic if and comparisson
     
     func comparator (){
         
