@@ -27,6 +27,11 @@ class Masina {
                 print ("Masina \(model) a producatorului \(producator) este veche!")
             }
             
+            while (autoturism.producator != "Ford")
+            {
+                print ("Nu ne intereseaza altceva inafara de Ford!")
+            }
+            
             
         }
         
