@@ -18,6 +18,15 @@ class Masina {
             
         {print ("Masina ieftina")
             
+            if (autoturism.anFabricatie > 2019){
+                
+                print("Masina \(model) a producatorului \(producator) este noua!")
+                
+            } else if (autoturism.anFabricatie < 2019) {
+                
+                print ("Masina \(model) a producatorului \(producator) este veche!")
+            }
+            
             
         }
         
