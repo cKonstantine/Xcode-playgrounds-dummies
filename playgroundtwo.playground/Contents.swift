@@ -1,54 +1,43 @@
 import UIKit
 
+class Person {
+    
+    var name = ""
+    
+}
 
-class Masina {
+
+class Employee: Person {
     
-    var producator: String = ""
-    var model: String = ""
-    var anFabricatie: Int = 0
-    var pret: Int = 0
-    var caroserie: String = ""
-    var numarSerie: Int = 0
+    var salary = 0
+    var role = ""
     
-    //Function with basic if and comparisson
-    
-    func comparator (){
+    func doWork () {
         
-        if (autoturism.pret < 20000)
-            
-        {print ("Masina ieftina")
-            
-            if (autoturism.anFabricatie > 2019){
-                
-                print("Masina \(model) a producatorului \(producator) este noua!")
-                
-            } else if (autoturism.anFabricatie < 2019) {
-                
-                print ("Masina \(model) a producatorului \(producator) este veche!")
-            }
-            
-            while (autoturism.producator != "Ford")
-            {
-                print ("Nu ne intereseaza altceva inafara de Ford!")
-                break
-                
-            }
-            
-            
-        }
+        print ("Hi my name is \(name) and I'm working")
+        salary += 1
         
     }
     
 }
 
-var autoturism = Masina()
+class Manager: Employee {
+    
+var teamSize = 0
+    
+    
+    override func doWork() {
+        
+        super.doWork()
+        print ("I'm Managing people")
+        salary += 2
+    }
+}
 
-autoturism.anFabricatie = 2020
-autoturism.caroserie = "sedan"
-autoturism.model = "benz"
-autoturism.producator = "opel"
-autoturism.pret = 19500
+var m = Manager()
 
-print (autoturism.comparator())
-
-//Adding random comment
+m.name = "Maggie"
+m.salary = 10000
+m.role = "Manager of IT"
+m.teamSize = 10
+m.doWork()
