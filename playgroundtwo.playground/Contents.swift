@@ -30,6 +30,8 @@ class Masina {
             while (autoturism.producator != "Ford")
             {
                 print ("Nu ne intereseaza altceva inafara de Ford!")
+                break
+                
             }
             
             
@@ -43,8 +45,8 @@ var autoturism = Masina()
 
 autoturism.anFabricatie = 2020
 autoturism.caroserie = "sedan"
-autoturism.model = "Focus"
-autoturism.producator = "Ford"
+autoturism.model = "benz"
+autoturism.producator = "opel"
 autoturism.pret = 19500
 
 print (autoturism.comparator())
